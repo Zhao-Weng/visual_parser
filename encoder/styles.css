@@ -1,0 +1,53 @@
+.visual-encoder-target {
+  border: 3px dotted brown!important;
+}
+
+.visual-encoder-intermediate-grid {
+  border: 3px solid red!important;
+}
+
+.visual-encoder-intermediate-similar {
+  border: 3px solid   cyan!important;
+}
+
+.visual-encoder-similar-target {
+  border: 3px solid yellow!important;
+}
+
+.visual-encoder-intermediate-grid.visual-encoder-intermediate-container {
+  border: 3px solid #FFFF00!important;
+}
+
+.visual-encoder-intermediate-container {
+  border: 3px solid green!important;
+}
+
+.visual-encoder-intermediate-container.visual-encoder-intermediate-adjacent {
+  border: 3px solid #00FFFF!important; 
+}
+
+.visual-encoder-intermediate-adjacent {
+  border: 3px solid blue!important;
+}
+
+.visual-encoder-intermediate-adjacent.visual-encoder-intermediate-grid {
+  border: 3px solid #FF00FF!important; 
+}
+
+.visual-encoder-corner-cross {
+    background-color: pink;
+    position: absolute; 
+    z-index: 9999;
+}
+
+.visual-encoder-corner-cross.horizontal {
+    width: 100%; 
+    height: 2px;  
+}
+
+.visual-encoder-corner-cross.vertical {
+    top: 0;
+    position: fixed;
+    width: 2px; 
+    height: 100%; 
+}

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 2,
+
+  "name": "Visual Encoder",
+  "description": "This extension encodes and decodes elements on a web page based on a visual language description",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "lib/jquery-2.1.4.js",
+        "utility.js",
+        "clear-styles.js",
+        //encoder
+        "encoder/objects/content.js",
+        "encoder/objects/element.js",
+        "encoder/objects/offset-value.js",
+        "encoder/objects/offset.js",
+        "encoder/objects/size.js",
+        "encoder/modules/encoder-utility.js",
+        "encoder/modules/element-size-calculator.js",
+        "encoder/modules/intermediate-element-helper.js",
+        "encoder/modules/intermediate-element-calculator.js",
+        "encoder/encode.js",
+        //decoder
+        "decoder/sample-inputs/bootstrap-sample/jumbotron-h1.js",
+        "decoder/sample-inputs/bootstrap-sample/col-md-4-2.js",
+        "decoder/decode.js"
+      ],
+      "css": [
+        "encoder/styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "scripts": ["context-menu.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus"
+  ]
+}
