@@ -1,6 +1,6 @@
 # Website Encoder Extension#
 
-This Chrome Extension takes a website and elements as an input and tries to extract any elements specified and store their relative visual attributes for later identification, even if the site structure changes moderately. The goal is to enable more robust scraping that recognizes elements by their size, shape, and location rather than position in the DOM tree. Specifications for the visual language are [here](docs/language-spec.md).
+This Chrome Extension takes a website and elements as an input and tries to extract any elements specified and store their relative visual attributes for later identification for small changes of the webpage. The goal is to enable more robust scraping that recognizes elements by their size, shape, and location rather than position in the DOM tree. Specifications for the visual language are spcified in the doc folder. 
 
 ## Requirements ##
 
